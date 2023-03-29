@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body{
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+
+}
+header{
+   position: relative;
+   height: 35vh;
+   background-image: url(../images/bg-main-mobile.png);
+   background-size: cover;
+}
+header div{
+   position: absolute;
+   width:80%;
+   max-width: 500px;
+   right: 5%;
+   top: 15%;
+}
+header > div img{
+   width: 100%;
+}
+
+header p{
+   position:absolute;
+   color: white;
+   right: 14%;
+   top:32%;
+}
+div#froncard{
+   position: absolute;
+   top: 18%;
+   left: 5%;
+   background-image: url(../images/bg-card-front.png);
+   background-size: cover;
+   width: 80%;
+   max-width: 500px;
+   height: 160px;
+   border-radius: 10px;
+   color: white;
+   font-size: 0.7em;
+}
+#froncard #bolow{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: white;
+   margin: 20px 0 0 20px;
+}
+#froncard #bolatra{
+   position: absolute;
+   left: 20%;
+   top: 17%;
+   border: 1px solid wheat;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+}
+#froncard h1{
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: lighter;
+   text-align: center;
+   margin-top: 30px;
+}
+
+
