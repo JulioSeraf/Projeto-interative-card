@@ -1,9 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 body{
    margin: 0;
    padding: 0;
    width: 100vw;
+   max-width: 360px;
    height: 100vh;
+   max-height: 800px;
 
 }
 header{
@@ -41,12 +44,15 @@ div#froncard{
    border-radius: 10px;
    color: white;
    font-size: 0.7em;
+   padding-bottom: 10px;
+   font-family: 'Space Grotesk', sans-serif;
+   box-shadow: 0 40px 50px rgba(0, 0, 0, 0.221);
 }
 #froncard #bolow{
    width: 30px;
    height: 30px;
    border-radius: 50%;
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    margin: 20px 0 0 20px;
 }
 #froncard #bolatra{
@@ -59,10 +65,50 @@ div#froncard{
    border-radius: 50%;
 }
 #froncard h1{
-   font-family: 'Courier New', Courier, monospace;
    font-weight: lighter;
    text-align: center;
-   margin-top: 30px;
+   margin-top: 40px;
+   margin-bottom: 3px;
+}
+#froncard p{
+   font-weight: lighter;
+   display: inline-block;
+   padding: 0 20px;
+}
+#froncard #num{
+  margin-left: 60px;
 }
 
+form{
+   font-family: 'Space Grotesk', sans-serif;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-top: 100px;
+   text-align: left;
+   padding: 10px;
+   
+}
+form .for1{
+   width: 90%;
+   height: 40px;
+   margin-bottom: 20px;
+   margin-top: 15px;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.306);
+   padding: 5px;
+}
+.date{
+   width: 20%;
 
+}
+#texcvc{
+   padding-left: 30px;
+   padding-right: 100px;
+}
+#icvc{
+   width: 30%;
+}
+#pos{
+   display: none;
+   background-color: antiquewhite;
+}
