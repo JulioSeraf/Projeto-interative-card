@@ -1,28 +1,83 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
  *{
    margin: 0;
    padding: 0;
-   font-family: ;
+   font-size: 18px;
  }
  body{
-   display: flex;
-   flex-direction:row;
-   flex-wrap:wrap;
-
+  width: 100%;
+  height: 100%;
  }
  header{
-   height: 100vh;
-   border: 1px solid black;
+  position: relative;
+  padding: 20px;
+  height: 200px;
+  background-color: hsl(278, 81%, 20%);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.411);
+ }
+ .cards{
+  width: 280px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+ #backcard{
+  position:absolute;
+  background-image: url(../images/bg-card-back.png);
+  right:3%;
+  top: 15%;
+ }
+ #backcard p{
+  position: absolute;
+  right: 15%;
+  top: 26%;
+  color: white;
 
  }
- main{
-   align-items:center ;
+ #frontcard{
+  background-image: url(../images/bg-card-front.png);
+  position:absolute;
+  top: 51%;
+  left: 3%;
 
-}
-section{
-   display: none;
-}
-footer{
-width: 100%;
+ }
+ #frontcard > .bola1{
+  display: inline-block;
+  background-color:white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 15px 0 0 20px;
+ }
+ #frontcard > .bola2{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 0 5px 3px;
+ }
+ #frontcard > h1{
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin:30px 0 10px 0;
+
+
+ }
+ #frontcard p {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+  font-size: 0.7em;
+ }
+ #frontcard #num{
+  float: right;
+  margin-right: 20px;
+ }
+/* parte do form */
+form{
+  padding-top: 80px;
 }
