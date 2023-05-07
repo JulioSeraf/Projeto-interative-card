@@ -1,0 +1,47 @@
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    form{
+      position: relative;
+    }
+    .date{
+      width: 40px;
+    }
+    #texcvc{
+      position: absolute;
+      width: 40px;
+      left: 10px;
+      bottom: 18%;
+    }
+    .ipcvc{
+      display: block;
+      
+    }
+ }
+@media screen and (min-width:769px) {
+    body{
+        display: flex;
+        overflow: hidden;
+        transition: 1s;
+    }
+    header{
+        width: 30%;
+        height: 92.5vh;
+    }
+    #backcard{
+        left: 60%;
+        top: 50%;
+    }
+    #frontcard{
+        top: 17%;
+        left: 45%;
+    }
+    form{
+       position: absolute;
+       width: 350px;
+       top: 5%;
+       left: 55%;    
+        
+    }
+    footer{
+        display: none;
+    }
+}

@@ -39,6 +39,7 @@
   position:absolute;
   top: 51%;
   left: 3%;
+  z-index:1;
 
  }
  #frontcard > .bola1{
@@ -118,8 +119,9 @@ form > button{
   width: 10%;
 }
 .ipcvc{
-  display: inline-block;
-  width:clamp(30px, 40%, 700px);
+  display:inline-block;
+  width:clamp(30px, 41%, 1000px );
+  
 }
 #imes{
   margin-left: 5%;
@@ -132,6 +134,4 @@ footer{
   text-align: center;
   font-size: .5em;
 }
-@screen and (max-width: 600px){
-  
-}
+ 
