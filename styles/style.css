@@ -6,6 +6,7 @@
  }
  body{
   width: 100%;
+  
  }
  header{
   position: relative;
@@ -13,6 +14,7 @@
   height: 200px;
   background-color: hsl(278, 81%, 20%);
   box-shadow: 0 0 70px rgba(0, 0, 0, 0.411);
+  transition: 1s;
  }
  .cards{
   width: 280px;
@@ -39,6 +41,7 @@
   top: 51%;
   left: 3%;
   z-index:1;
+  transition: 1s;
 
  }
  #frontcard > .bola1{
@@ -81,6 +84,7 @@ form{
   font-size:.9em;
   height: 100%;
   text-align: left;
+  transition: 1s; 
 }
 label{
   margin-left: 5%;
