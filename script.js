@@ -19,11 +19,11 @@ mes.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.va
 anos.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.value});
 cvc.addEventListener('input',()=>{cardCvc.textContent = cvc.value});
 function blackColor(){
-    nome.style.border = 'black';
-    senha.style.border = 'black';
-    mes.style.border = 'black';
-    anos.style.border = 'black';
-    cvc.style.border = 'black';
+    nome.style.border = '1px solid black';
+    senha.style.border = '1px solid black';
+    mes.style.border = '1px solid black';
+    anos.style.border = '1px solid black';
+    cvc.style.border = '1px solid black';
 }
 butEnviar.addEventListener('click',(e)=>{
     e.preventDefault();
