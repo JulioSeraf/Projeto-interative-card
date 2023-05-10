@@ -160,6 +160,7 @@ section > p {
 section > button{
   display: block;
   width:90%;
+  font-size: 1.3em;
   padding: 14px;
   background-color: hsl(278, 81%, 20%);
   margin: auto;
@@ -168,3 +169,7 @@ section > button{
   color: white;
 }
  
+section > .oksimbulo{
+  font-size: 3.5em;
+  color: white;
+}
