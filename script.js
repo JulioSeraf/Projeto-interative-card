@@ -7,29 +7,44 @@ const anos = document.getElementById('ianos');
 let nome = document.getElementById('inome');
 let senha = document.getElementById('inum');
 let cvc = document.getElementById('icvc');
+let text = document.getElementById('tex');
+let cardNum = document.getElementById('cardNum');
+let cardName = document.getElementById('cardName');
+let cardAnos = document.getElementById('cardAnos');
+
+senha.addEventListener('input',()=>{
+    cardNum.textContent = senha.value;
+});
+nome.addEventListener('input',()=>{cardName.textContent = nome.value;})
+anos.addEventListener('input',()=>{cardAnos.textContent = anos.value;})
+
+function blackColor(){
+    nome.style.border = 'black';
+    senha.style.border = 'black';
+    mes.style.border = 'black';
+    anos.style.border = 'black';
+    cvc.style.border = 'black';
+}
 butEnviar.addEventListener('click',(e)=>{
     e.preventDefault();
     if(nome.value.length < 5 || nome.value.length > 25){
         nome.style.border = '1px solid red'
        alert('Nombre no corresponde, informe los datos correntamente');
-        }else if (senha.value.length < 16){
-            nome.style.border = 'black';
+        }else if (senha.value.length < 16){       
+            blackColor();
             senha.style.border = '1px solid red'
             alert('numero de la tarjeta no corresponde, informe los datos correntamente');
         }else if(mes.value.length < 2 || anos.value.length < 2){
-            nome.style.border = 'black';
-            senha.style.border = 'black';
+            blackColor();
             mes.style.border = '1px solid red';
             anos.style.border = '1px solid red'
              alert('Informe los datos de validad correntamente.');
         }else if(cvc.value.length < 3 ){ 
-            senha,mes,anos,cvc,nome.style.border = 'black';
-            // mes.style.border = 'black';
-            // anos.style.border = 'black';
+            blackColor();
             cvc.style.border = '1px solid red';
-            alert('Informe o datos CvC corretamente')
+            cvc.style.gridAutoFlow('Informe o datos CvC corretamente')
         }else{
-            senha,mes,anos,cvc,nome.style.border = 'black';
+            blackColor();
             form.style.display = 'none';
             posConfirm.style.display = 'block';
         }
