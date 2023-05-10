@@ -11,13 +11,13 @@ let text = document.getElementById('tex');
 let cardNum = document.getElementById('cardNum');
 let cardName = document.getElementById('cardName');
 let cardAnos = document.getElementById('cardAnos');
+let cardCvc = document.querySelector('.cardCvc');
 
-senha.addEventListener('input',()=>{
-    cardNum.textContent = senha.value;
-});
-nome.addEventListener('input',()=>{cardName.textContent = nome.value;})
-anos.addEventListener('input',()=>{cardAnos.textContent = anos.value;})
-
+senha.addEventListener('input',()=>{cardNum.textContent = senha.value});
+nome.addEventListener('input',()=>{cardName.textContent = nome.value});
+mes.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.value});
+anos.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.value});
+cvc.addEventListener('input',()=>{cardCvc.textContent = cvc.value});
 function blackColor(){
     nome.style.border = 'black';
     senha.style.border = 'black';
