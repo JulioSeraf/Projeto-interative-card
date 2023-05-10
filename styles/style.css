@@ -18,7 +18,7 @@
  }
  .cards{
   width: 280px;
-  height: 250px;
+  height: 157px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@
  #backcard p{
   position: absolute;
   right: 15%;
-  top: 26%;
+  top: 42%;
   color: white;
 
  }
@@ -42,8 +42,6 @@
   left:3%;
   z-index:1;
   transition: 1s;
-  
-
  }
  #frontcard > .bola1{
   display: inline-block;
