@@ -85,6 +85,28 @@ form{
   text-align: left;
   transition: 1s; 
 }
+/* text de erro*/
+form > div > p {
+  position: relative;
+  top: -20px;
+  font-family: cursive;
+  font-size: 0.8em;
+  text-align:center;
+  color: rgba(255, 0, 0, 0.639);
+}
+
+#nameText{
+  display:none;
+}
+#numberText{
+  display:none;
+}
+#dateText{
+  display: none;
+}
+#cvcText{
+  display: none;
+}
 label{
   margin-left: 5%;
 }

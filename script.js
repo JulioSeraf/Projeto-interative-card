@@ -18,6 +18,14 @@ nome.addEventListener('input',()=>{cardName.textContent = nome.value});
 mes.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.value});
 anos.addEventListener('input',()=>{cardAnos.textContent = mes.value +'/'+ anos.value});
 cvc.addEventListener('input',()=>{cardCvc.textContent = cvc.value});
+const display = (res) =>{
+    if(res == true){
+        text.style.display = 'block';
+    }else{
+        text.style.display = 'none';
+    }
+
+}
 function blackColor(){
     nome.style.border = '1px solid black';
     senha.style.border = '1px solid black';
@@ -28,21 +36,29 @@ function blackColor(){
 butEnviar.addEventListener('click',(e)=>{
     e.preventDefault();
     if(nome.value.length < 5 || nome.value.length > 25){
-        nome.style.border = '1px solid red'
+       let text = document.getElementById('nameText');
+        text.style.display = 'block';
+        nome.style.border = '1px solid red';
        alert('Nombre no corresponde, informe los datos correntamente');
-        }else if (senha.value.length < 16){       
+        }else if (senha.value.length < 16){      
             blackColor();
-            senha.style.border = '1px solid red'
+            text = document.getElementById('numberText');
+            text.style.display = 'block';
+            senha.style.border = '1px solid red';
             alert('numero de la tarjeta no corresponde, informe los datos correntamente');
         }else if(mes.value.length < 2 || anos.value.length < 2){
             blackColor();
+            text = document.getElementById('dateText');
+            text.style.display = 'block';
             mes.style.border = '1px solid red';
-            anos.style.border = '1px solid red'
+            anos.style.border = '1px solid red';
              alert('Informe los datos de validad correntamente.');
         }else if(cvc.value.length < 3 ){ 
             blackColor();
+            text = document.getElementById('cvcText');
+            text.style.display = 'block';
             cvc.style.border = '1px solid red';
-            cvc.style.gridAutoFlow('Informe o datos CvC corretamente')
+            alert('Informe o datos CvC corretamente');
         }else{
             blackColor();
             form.style.display = 'none';
