@@ -24,7 +24,7 @@
 }
  #backcard{
   position:absolute;
-  background-image: url(../images/bg-card-back.png);
+  background-image: url(/images/bg-card-back.png);
   right:3%;
   top: 15%;
  }
@@ -36,7 +36,7 @@
 
  }
  #frontcard{
-  background-image: url(../images/bg-card-front.png);
+  background-image: url(/images/bg-card-front.png);
   position:absolute;
   top: 51%;
   left:3%;
