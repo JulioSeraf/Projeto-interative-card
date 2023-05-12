@@ -36,31 +36,35 @@ function blackColor(){
 butEnviar.addEventListener('click',(e)=>{
     e.preventDefault();
     if(nome.value.length < 5 || nome.value.length > 25){
-       let text = document.getElementById('nameText');
+       var text = document.getElementById('nameText');
         text.style.display = 'block';
         nome.style.border = '1px solid red';
-       alert('Nombre no corresponde, informe los datos correntamente');
         }else if (senha.value.length < 16){      
             blackColor();
+            var notext = document.getElementById('nameText');
+            notext.style.display = 'none';
             text = document.getElementById('numberText');
             text.style.display = 'block';
             senha.style.border = '1px solid red';
-            alert('numero de la tarjeta no corresponde, informe los datos correntamente');
         }else if(mes.value.length < 2 || anos.value.length < 2){
             blackColor();
+            var notext = document.getElementById('numberText');
+            notext.style.display = 'none';
             text = document.getElementById('dateText');
             text.style.display = 'block';
             mes.style.border = '1px solid red';
             anos.style.border = '1px solid red';
-             alert('Informe los datos de validad correntamente.');
         }else if(cvc.value.length < 3 ){ 
             blackColor();
+            var notext = document.getElementById('dateText');
+            notext.style.display = 'none';
             text = document.getElementById('cvcText');
             text.style.display = 'block';
             cvc.style.border = '1px solid red';
-            alert('Informe o datos CvC corretamente');
         }else{
             blackColor();
+            var notext = document.getElementById('cvcText');
+            notext.style.display = 'none';
             form.style.display = 'none';
             posConfirm.style.display = 'block';
         }
